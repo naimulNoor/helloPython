@@ -1,7 +1,11 @@
-<html> 
-    <head></head> 
-    <body> 
-      <h1>স্বাগতম বাংলায় জ্যাঙ্গো টিউটোরিয়াল এর প্রথম টেমপ্লেট এ </h1>
-      <h2>Hello, I am Naimul Hassan Noor </h2> 
-    </body> 
-</html>
+
+<html>
+    <head></head>
+    <body>
+        <h1>স্বাগতম বাংলায় জ্যাঙ্গো টিউটোরিয়াল এর প্রথম টেমপ্লেট এ </h1>
+    
+        {% for post in all_post_list %}
+           {{ post.description }}
+        {% endfor %}
+    </body>
+    </html>
