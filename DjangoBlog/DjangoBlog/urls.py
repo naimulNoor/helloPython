@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', views.home,name='home'),
   # path('contact/', views.contact, name='contact-list'),
-    path('post-list/', views.post_list, name='post-list')
+    path('post-list/', views.post_list, name='post-list'),
+    path('single-post/<post_id>/', views.single_post, name='single-post')
 ]
